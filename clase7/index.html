@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset</title>
+    <style>
+        a {
+            color: brown;
+            text-decoration: none;
+        }
+        ul {
+            list-style: decimal;
+         }
+         /* herencia */
+         ul li a {
+            color: blue;
+         }
+         .texto-color {
+            color: coral;
+         }
+         #texto-color{
+            color: chartreuse;
+         }
+         .texto-color-important{
+            color: darkblue !important;
+         }
+         /* selector de atributos */
+         [href] {
+            background-color: coral;
+            text-decoration: line-through;
+         }
+         [id="nosotros"]
+         {
+            background-color: cornflowerblue;
+         }
+         /*inicie con algo*/
+         [id^="re"] { 
+            background-color: aquamarine;
+         }
+         /*termine con*/
+         [id$="os"]{
+            color: forestgreen;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#nosotros">link1</a>
+                        </li>
+                        <li>
+                            <a href="link2">link2</a>
+                        </li>
+                        <li>
+                            <a href="link3">link3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <p style="color: blueviolet;" class="texto-color texto-color-important" id="#texto-color"> parrafo</p>
+        
+        <fieldset>
+            <legend> mi primer fieldset</legend>
+            <form method="post">
+                <input type="file" name="archivo">
+                <button>
+                    enviar
+                </button>
+            </form>
+        </fieldset>
+    </section>
+    <section id="nosotros">
+        <h3>nosotros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque nam et iste ipsum hic, natus cum sed. Optio neque modi sunt eveniet explicabo ea harum commodi veritatis natus quas?</p>
+    </section>
+
+    <section id="contacto">
+        <h3>contacto</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, accusantium voluptatem quasi inventore voluptatibus eaque, vitae vero suscipit repellat autem, animi in facere reiciendis delectus doloremque blanditiis ea sapiente expedita.</p>
+        </section>
+        
+        <section id="galeria">
+            <h3>galer&iacute;a</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit eveniet pariatur nulla! Illo laboriosam ratione quos est facilis aliquid modi, officiis quis magnam ea eius odit blanditiis velit provident.</p>
+        </section>
+
+        <section id="regaso">
+            <h3>regaso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit eveniet pariatur nulla! Illo laboriosam ratione quos est facilis aliquid modi, officiis quis magnam ea eius odit blanditiis velit provident.</p>
+        </section>
+    </main>
+</body>
+</html>
