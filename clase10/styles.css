@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-flex {
+    display: flex;  /* Hace que los items queden uno al lado del otro   */
+    border: 1px solid fuchsia;
+    /*flex-direction: row;*/
+    height: 50px;
+    width: 100%;
+    background-color: fuchsia;
+    justify-content: space-evenly; /* separa los items */
+    position: fixed; /* Hace que quede fijo  */
+    top: 0; /* especifica en que posicion desde el tope de la pagina queda fijo  */
+    align-items: center; /* centra verticalmente los items */
+    text-decoration: none;
+   }
+
+.container-flex div {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-flex div a:hover {
+        font-size: 1.2em; 
+        color: fuchsia;
+                                    /*cuando uno pasa el cursor se agranda*/
+    }
+    
+
+
+.container-flex div a {
+    text-decoration: none;
+}
+
+.content-text a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: aqua;
+}
+.content-text h2 {
+    font-size: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.family-banner {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+#fall-guys-1 {
+    width:40%;
+    
+}
+#fall {
+    width: 30%;
+    
+}
+#guys {
+    width: 30%;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section 
+  /*estilos para la section*/
+main section:first-child {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    
+ }
+
+main section:last-child {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
+ }
+
+ main section:nth-child(2) {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+ }
+html {
+    scroll-behavior: smooth;
+}
+
+/*media query: me sirve para cambiar los estilos cuando cambia la resolucion*/
+@media screen and (max-width:600px) {
+    .container-flex {
+        flex-direction: column;
+        background-color: blueviolet;
+    }
+    .container-item {
+        font-size: 2em;
+        color: blue;
+    }
+    
+    section {
+        height: 650px;
+       /* border: 1px solid blue;*/
+       /* margin: 10px; */
+       display: flex;
+       padding: 10px;
+       align-items: center;
+    }
+    section img {
+        margin: 15px;
+        width: 50%;
+     }
+
+    }
