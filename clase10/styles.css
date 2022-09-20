@@ -75,12 +75,11 @@ main section {
     justify-content: center;
     align-items: center;
 }
-main section 
   /*estilos para la section*/
+
 main section:first-child {
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    
- }
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
 
 main section:last-child {
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
@@ -95,27 +94,4 @@ html {
 }
 
 /*media query: me sirve para cambiar los estilos cuando cambia la resolucion*/
-@media screen and (max-width:600px) {
-    .container-flex {
-        flex-direction: column;
-        background-color: blueviolet;
-    }
-    .container-item {
-        font-size: 2em;
-        color: blue;
-    }
-    
-    section {
-        height: 650px;
-       /* border: 1px solid blue;*/
-       /* margin: 10px; */
-       display: flex;
-       padding: 10px;
-       align-items: center;
-    }
-    section img {
-        margin: 15px;
-        width: 50%;
-     }
-
-    }
+@media screen and (max-width:600px) {}
