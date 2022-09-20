@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-nav li:hover {
+    font-weight: bold;
+}
+
+.navbar-nav li::before {
+    display:block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.navbar-nav li {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.content-text {
+    color: azure;
+    justify-content: right;
+}
+
+.card-img-overlay {
+    top:50%;
+    left:60%;
+} 
+
+.botones {
+    margin-left: 7px;
+}
+
+.centered {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbargrey {
+    background-color: rgb(61, 61, 61);
+}
+
+.navbarblue {
+    background-color: rgb(33, 33, 49);
+   
+}
+
+#codoacodo {
+    height:8vh;
+}
+
+
+#comprar-tickets {
+    color:darkgreen
+}
+
+#honolulu {
+    width: 50vw;
+}
+
+#card {
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+
+#formulario {
+    width: 50vw;
+}
+
+#formulario1{
+    width: 51vw;
+}
+
+#oscurecerimg {
+    filter: brightness(50%);
+}

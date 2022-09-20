@@ -75,11 +75,10 @@ main section {
     justify-content: center;
     align-items: center;
 }
-main section 
   /*estilos para la section*/
 
 main section:first-child {
-    background-color: #fbc2eb;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 main section:last-child {
