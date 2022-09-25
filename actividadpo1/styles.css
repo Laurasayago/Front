@@ -1,0 +1,8 @@
+body {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.card-img-top {
+    object-fit:fill;
+    height: 35vh;
+}
