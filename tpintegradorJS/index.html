@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light text-white navbargrey">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+               Conf Bs As
+            </a>
+            <ul class="navbar-nav ">
+              <li class="nav-item" title="La Conferencia">La Conferencia</li>
+              <li class="nav-item" title="Los Oradores">Los Oradores</li>
+              <li class="nav-item" title="El lugar y la fecha">El lugar y la fecha</li>
+              <li class="nav-item" title="Conviertete en un orador">Conviertete en un orador</li>
+              <li class="nav-item" id="comprar-tickets" title="Comprar tickets">Comprar tickets</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <main>
+        <div class="centered-elements">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-primary mb-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <b class="card-text">80%</b>
+                            <p class="card-text">*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card h-100 border-success mb-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <b class="card-text">50%</b>
+                            <p class="card-text">*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-warning mb-3 ">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <b class="card-text">15%</b>
+                            <p class="card-text">*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="text-center fw-light">VENTA</p>
+            <p class="text-center fw-bold fs-1 lh-1">VALOR DE TICKET $200</p>
+            <br>
+            <form id="getPriceForm">
+                
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="inputNombre" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="inputApellido" required>
+                    </div>
+                </div>
+                <br>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="inputCorreo" placeholder="Correo" required>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="inputCantidad" placeholder="cantidad" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Categoria</label>
+                        <select class="form-select form-select-md mb-2" aria-label=".form-select-lg example" id="customerType">
+                            <option selected value="0.2">Estudiante</option>
+                            <option value="0.5">Trainee</option>
+                            <option value="0.85">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="totalAPagar" placeholder="Total a Pagar: $">
+                </div>
+                <br>
+                <button class="btn btn-success formbutton1" type="reset">Borrar</button>
+                <button class="btn btn-success formbutton2" type="submit">Resumen</button>
+            </form>    
+        </div>
+     </main>
+     <br>
+     <footer>
+        <div class="centerFooter navbarblue">
+            <nav class="navbar py-4 navbar-expand-lg navbar-light text-white">
+                <ul class="navbar-nav cont-fluid">
+                    <li class="nav-item" title="Preguntas frecuentes">Preguntas frecuentes</li>
+                    <li class="nav-item" title="Contactanos">Contactanos</li>
+                    <li class="nav-item" title="Prensa">Prensa</li>
+                    <li class="nav-item" title="Conferencias">Conferencias</li>
+                    <li class="nav-item" title="Terminos y condiciones">Terminos y condiciones</li>
+                    <li class="nav-item" title="Privacidad">Privacidad</li>
+                    <li class="nav-item" title="Estudiantes">Estudiantes</li>
+                </ul>
+            </nav> 
+        </div>
+    </footer> 
+</body>
+<script src="./script.js"></script>
+</html>
